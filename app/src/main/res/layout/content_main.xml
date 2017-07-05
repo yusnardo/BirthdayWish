@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="yusnardo.com.birthdaywish.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/merahMuda0">
+
+    <yusnardo.com.birthdaywish.SlidingTabLayout
+        android:id="@+id/stl_tabs"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </yusnardo.com.birthdaywish.SlidingTabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_tabs"
+        android:layout_below="@+id/stl_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

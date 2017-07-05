@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yusnardo.com.birthdaywish.Tab1"
+    android:background="@color/merahMuda0">
+
+
+    <ImageView
+        android:layout_height="267dp"
+        app:srcCompat="@drawable/hbd"
+        android:id="@+id/imageView"
+        android:layout_gravity="top|center_horizontal"
+        android:paddingTop="10dp"
+        android:layout_width="355dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_gravity="bottom">
+        <yusnardo.com.birthdaywish.CustomTextView
+            android:text="@string/hbd"
+            android:textColor="@color/merah0"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/textView2"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_gravity="start|end"
+            android:overScrollMode="ifContentScrolls"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+    </ScrollView>
+
+</FrameLayout>
